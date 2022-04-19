@@ -1,5 +1,5 @@
 {
-  "name": "books-webapp-01-static-prototypes-",
+  "name": "books-webapp-02-static-prototypes-",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/knam04/books-webapp-01-static-prototypes-.git"
+    "url": "git+https://github.com/knam04/books-webapp-02-static-prototypes-.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/knam04/books-webapp-01-static-prototypes-/issues"
+    "url": "https://github.com/knam04/books-webapp-02-static-prototypes-/issues"
   },
-  "homepage": "https://github.com/knam04/books-webapp-01-static-prototypes-#readme",
+  "homepage": "https://github.com/knam04/books-webapp-02-static-prototypes-#readme",
   "dependencies": {
     "express": "^4.17.3",
     "morgan": "^1.10.0"
