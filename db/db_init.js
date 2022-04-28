@@ -28,5 +28,17 @@ db.execute(insert_book_table_sql, ['If We Were Villians', 'M.L. Rio', null, null
 db.execute(insert_book_table_sql, ['1984', 'George Orwell', 'Nineteen Eighty-Four is a dystopian social science fiction novel and cautionary tale written by English writer George Orwell.', '6']);
 db.execute(insert_book_table_sql, ['The Priory of the Orange Tree', 'Samantha Shannon', null, null]);
 
+const read_book_table_sql = "SELECT * FROM book";
+
+db.execute(read_book_table_sql, 
+    (error, results) => {
+        if (error) 
+            throw error;
+
+        console.log("Table 'book' initialized with:")
+        console.log(results);
+    }
+);
+
 db.end();
 
