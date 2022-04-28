@@ -25,6 +25,8 @@ const insert_book_table_sql = `
 
 db.execute(insert_book_table_sql, ['THe Song of Achilles', 'Madeline Miller', 'Set during the Greek Heroic Age, it is an adaptation of Homer\'s Iliad as told from the perspective of Patroclus.', '8']);
 db.execute(insert_book_table_sql, ['If We Were Villians', 'M.L. Rio', null, null]);
+db.execute(insert_book_table_sql, ['1984', 'George Orwell', 'Nineteen Eighty-Four is a dystopian social science fiction novel and cautionary tale written by English writer George Orwell.', '6']);
+db.execute(insert_book_table_sql, ['The Priory of the Orange Tree', 'Samantha Shannon', null, null]);
 
 db.end();
 
