@@ -4,6 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "devstart": "nodemon -e js,ejs,sql,env app.js",
+    "restart": "node db/db_init.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,8 +21,12 @@
   "homepage": "https://github.com/knam04/books-webapp-02-static-prototypes-#readme",
   "dependencies": {
     "dotenv": "^16.0.0",
-    "express": "^4.17.3",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
     "morgan": "^1.10.0",
     "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }

@@ -33,36 +33,36 @@
 
                 </thead>
                 <tbody>
-
+                    <% for (let i = 0; i < inventory.length; i++) { %>
                     <tr>
-                        <td style="color: white">If We Were Villains</td>
-                        <td style="color: white">M.L. Rio</td>
+                        <td style="color: white"><%= inventory[i].title %></td>
+                        <td style="color: white"><%= inventory[i].author %></td>
                         <td> 
-                            <a class="btn-small waves-effect waves-light brown lighten-1" href="/inventory/book"><i
-                                    class="material-icons right">edit</i>Info/Edit</a>
-                            <a class="btn-small waves-effect waves-light red darken-2"><i
+                            <a class="btn-small waves-effect waves-light brown lighten-1" href= "/inventory/book/<%= inventory[i].id %>" >
+                                <i class="material-icons right">edit</i>Edit</a>
+                            <a class="btn-small waves-effect waves-light red darken-2" href="/inventory/book/<%= inventory[i].id %>/delete"><i
                                     class="material-icons right">delete</i>Delete</a>
                         </td>
                     </tr>
 
-                    <tr>
-                        <td style="color: white">The Song of Achilles</td>
-                        <td style="color: white">Madeline Miller</td>
+                    <!-- <tr>
+                        <td style="color: white"><%= inventory[i].title %></td>
+                        <td style="color: white"><%= inventory[i].author %></td>
                         <td>
                             <a class="btn-small waves-effect waves-light brown lighten-1" href="/inventory/book"><i
                                     class="material-icons right">edit</i>Info/Edit</a>
                             <a class="btn-small waves-effect waves-light red darken-2"><i
                                     class="material-icons right">delete</i>Delete</a>
                         </td>
-                    </tr>
-
+                    </tr> -->
+                    <% } %>
                 </tbody>
             </table>
         </div>
 
         <div class="section" id="stuffAdd">
-            <h2 style="color: white">Add a book:</h2>
-            <form>
+            <h2 style="color: aliceblue">Add a book:</h2>
+            <form method = "post" >
                 <div class="row">
                     <div class="input-field col s6">
                         <label style="color:lightgray" for="name">Book Title:</label>
